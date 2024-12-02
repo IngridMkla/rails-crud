@@ -1,0 +1,14 @@
+<h1> Restaurant list:</h1>
+There are <%= Restaurant.count %> restaurants available on our website!
+
+<% @restaurants.each do |restaurant| %>
+  <button>
+    <%= link_to "Show", restaurant_path(restaurant) %>
+    <h3><%= restaurant.name %> <br></h3>
+    Rating : <%= restaurant.rating %> <br>
+  </button>
+<% end %>
+
+<button>
+    <%= link_to "Create", new_restaurant_path(@restaurant) %>
+</button>

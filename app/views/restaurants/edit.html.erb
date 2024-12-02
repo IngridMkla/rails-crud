@@ -1,0 +1,14 @@
+<h1>Restaurant creation form</h1>
+
+<%= form_with model: @restaurant do |form| %>
+  <%= form.label :name, "Restaurant name: " %>
+  <%= form.text_field :name, placeholder: "Restaurant name" %>
+
+  <%= form.label :rating, "Restaurant rate: " %>
+  <%= form.select :rating, [0 ,1 ,2 ,3 ,4 ,5 ] %>
+
+  <%= form.label :address, "Restaurant address: " %>
+  <%= form.text_field :address, placeholder: "ex: 10 rue des rosier, 75006, Paris" %>
+
+  <%= form.submit("Save")%>
+<% end %>
