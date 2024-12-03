@@ -48,6 +48,8 @@ group :development, :test do
 
   gem "pry-byebug"
 
+  gem "simple_form"
+
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
